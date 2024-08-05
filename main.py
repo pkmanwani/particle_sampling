@@ -1,9 +1,10 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import glob
 # Load particles and weights from CSV
-df = pd.read_csv('weighted_particles.csv')
+
+df = pd.read_csv('csv/weighted_particles.csv')
 particles = df[['x', 'y']].to_numpy()
 weights = df['q'].to_numpy()
 
